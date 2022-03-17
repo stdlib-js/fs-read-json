@@ -42,6 +42,7 @@
     "@stdlib/assert-is-plain-object": "^0.0.x",
     "@stdlib/assert-is-string": "^0.0.x",
     "@stdlib/fs-read-file": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/string-remove-utf8-bom": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x",
     "@stdlib/utils-parse-json": "^0.0.x"
