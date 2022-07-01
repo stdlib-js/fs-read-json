@@ -24,32 +24,30 @@ limitations under the License.
 
 > Read a file as [JSON][json].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/fs-read-json
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-readJSON = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.readJSON;
-})();
-</script>
+var readJSON = require( '@stdlib/fs-read-json' );
 ```
 
 <a name="read-json"></a>
@@ -129,12 +127,7 @@ The function accepts the same `options` as [`readJSON()`](#read-json) above.
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript">
-(function () {
+```javascript
 var join = require( 'path' ).join;
 var readJSON = require( '@stdlib/fs-read-json' );
 
@@ -164,11 +157,6 @@ function onJSON( error, data ) {
         console.log( 'Package description: %s', data.description );
     }
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -254,6 +242,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/fs-read-json/tree/deno
 [umd-url]: https://github.com/stdlib-js/fs-read-json/tree/umd
 [esm-url]: https://github.com/stdlib-js/fs-read-json/tree/esm
+[branches-url]: https://github.com/stdlib-js/fs-read-json/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/fs-read-json/main/LICENSE
 
@@ -263,7 +252,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file/tree/umd
+[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file
 
 <!-- </related-links> -->
 
