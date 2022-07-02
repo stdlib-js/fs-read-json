@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.readJSON;
+})();
 })();
 </script>
 ```
@@ -141,6 +143,7 @@ The function accepts the same `options` as [`readJSON()`](#read-json) above.
 <body>
 <script type="text/javascript">
 (function () {
+(function () {
 var join = require( 'path' ).join;
 var readJSON = require( '@stdlib/fs-read-json' );
 
@@ -171,6 +174,7 @@ function onJSON( error, data ) {
     }
 }
 
+})();
 })();
 </script>
 </body>
@@ -270,7 +274,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file/tree/umd
+[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
