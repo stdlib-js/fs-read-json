@@ -24,20 +24,30 @@ limitations under the License.
 
 > Read a file as [JSON][json].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/fs-read-json
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import readJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@esm/index.mjs';
+var readJSON = require( '@stdlib/fs-read-json' );
 ```
 
 <a name="read-json"></a>
@@ -86,7 +96,7 @@ Synchronously reads a file as [JSON][json].
 
 ```javascript
 var join = require( 'path' ).join;
-import instanceOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-instance-of@esm/index.mjs';
+var instanceOf = require( '@stdlib/assert-instance-of' );
 
 var out = readJSON.sync( join( __dirname, 'package.json' ) );
 if ( instanceOf( out, Error ) ) {
@@ -117,14 +127,9 @@ The function accepts the same `options` as [`readJSON()`](#read-json) above.
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
+```javascript
 var join = require( 'path' ).join;
-import readJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@esm/index.mjs';
+var readJSON = require( '@stdlib/fs-read-json' );
 
 var file = join( __dirname, 'package.json' );
 
@@ -152,10 +157,6 @@ function onJSON( error, data ) {
         console.log( 'Package description: %s', data.description );
     }
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -185,7 +186,7 @@ function onJSON( error, data ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -229,7 +230,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -251,7 +252,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file/tree/esm
+[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file
 
 <!-- </related-links> -->
 
