@@ -21,7 +21,7 @@
 // MODULES //
 
 var resolve = require( 'path' ).resolve;
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var instanceOf = require( '@stdlib/assert-instance-of' );
 var pkg = require( './../package.json' ).name;
 var readJSON = require( './../lib' );
