@@ -35,30 +35,38 @@ limitations under the License.
 
 > Read a file as [JSON][json].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/fs-read-json
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var readJSON = require( '@stdlib/fs-read-json' );
+readJSON = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var readJSON = require( 'path/to/vendor/umd/fs-read-json/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.readJSON;
+})();
+</script>
 ```
 
 <a name="read-json"></a>
@@ -138,7 +146,12 @@ The function accepts the same `options` as [`readJSON()`](#read-json) above.
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript">
+(function () {
 var join = require( 'path' ).join;
 var readJSON = require( '@stdlib/fs-read-json' );
 
@@ -168,6 +181,11 @@ function onJSON( error, data ) {
         console.log( 'Package description: %s', data.description );
     }
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -263,7 +281,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file
+[@stdlib/fs/read-file]: https://github.com/stdlib-js/fs-read-file/tree/umd
 
 <!-- </related-links> -->
 
