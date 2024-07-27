@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import readJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@esm/index.mjs';
+import readJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@v0.2.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@esm/index.mjs';
+import { sync } from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@v0.2.2-esm/index.mjs';
 ```
 
 <a name="read-json"></a>
@@ -135,7 +135,7 @@ The function accepts the same `options` as [`readJSON()`](#read-json) above.
 <script type="module">
 
 var join = require( 'path' ).join;
-import readJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@esm/index.mjs';
+import readJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-json@v0.2.2-esm/index.mjs';
 
 var file = join( __dirname, 'package.json' );
 
