@@ -2,6 +2,50 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2024-10-26)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`c615a6f`](https://github.com/stdlib-js/stdlib/commit/c615a6f41c77d267a64e8bd685128b49cfe10141) - update return types
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`c615a6f`](https://github.com/stdlib-js/stdlib/commit/c615a6f41c77d267a64e8bd685128b49cfe10141) - **fix:** update return types _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-27)
